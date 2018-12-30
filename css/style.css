@@ -1,0 +1,182 @@
+/* BOJE U PROJEKTU 
+
+Bijela:			#ffffff
+Siva:			#dddddd
+Siva:			#e0e0e0
+Siva:			#cccccc
+Siva:			#282a2c
+Plava:			#2a5a8d
+Plava:			#27578a
+Plava:			#295380
+Plava:			#134880
+
+*/
+
+/* ==== GENERAL ==== */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.clearfix {
+	clear: both;
+	height: 0;
+}
+
+/* ==== LAYOUT ==== */
+
+header {
+	margin-bottom: 60px;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+#logo {
+	width: 300px;
+	height: 100px;
+	background-color: #ddd;
+	float: left;
+	border-radius: 0px 0px 5px 5px;
+}
+
+nav {
+	width: 620px;
+	height: 100px;
+	background-color: #ddd;
+	color: #fff;
+	float: right;
+	border-radius: 0px 0px 5px 5px;
+}
+
+nav p, footer p {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 100px;
+	padding-left: 80px;
+}
+
+section {
+	margin-bottom: 60px;
+	width: 100%;
+	height: 410px;
+	position: relative;
+}
+
+#slider_1, #slider_2 {
+	font-size: 0px; /* rješenje za neželjeni razmak između slika */
+    line-height: 0; /* rješenje za neželjeni razmak između slika */
+    height: 200px;
+    direction: rtl;
+    overflow: hidden;
+    position: absolute;
+}
+
+#slider_1 img, #slider_2 img {
+	margin-left: 10px;
+	border-radius: 5px;
+}
+
+#slider_1 {
+	top: 0px;
+	left: 0px;
+	right: calc(50% - 150px);
+	margin-left: -120px;
+}
+
+#slider_2 {
+	top: 210px;
+	left: 0px;
+	right: calc(50% + 10px);
+	margin-left: -150px;
+}
+
+#dugmad {
+	width: 60px;
+	position: absolute;
+	top: 210px;
+	right: calc(50% - 150px);
+}
+
+button {
+	width: 60px;
+	height: 60px;
+	background-color: transparent;
+	outline: none;
+	border: 1px solid;
+	border-radius: 5px;
+	border-top-color: #e0e0e0;
+	border-right-color: #ddd;
+	border-bottom-color: #e0e0e0;
+	border-left-color: #ccc;
+	cursor: pointer;
+}
+
+button:hover {
+	border-top-color: #2a5a8d;
+	border-right-color: #27578a;
+	border-bottom-color: #2a5a8d;
+	border-left-color: #295380;
+}
+
+button#btn_lijevo, button#btn_desno {
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+}
+
+button#btn_lijevo {
+	margin-bottom: 10px;
+	background-image: url(../images/siva_lijevo.png);
+}
+
+button#btn_lijevo:hover {
+	background-image: url(../images/plava_lijevo.png);
+}
+
+button#btn_desno {
+	background-image: url(../images/siva_desno.png);
+}
+
+button#btn_desno:hover {
+	background-image: url(../images/plava_desno.png);
+}
+
+aside {
+	width: 300px;
+	position: absolute;
+	left: calc(50% + 170px);
+}
+
+aside h3 {
+	font-family: 'Source Sans Pro', sans-serif; /* Google font */
+	color: #134880;
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	margin-bottom: 25px;
+}
+
+aside p {
+	font-family: 'Open Sans', sans-serif; /* Google font */
+	color: #282a2c;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+footer {
+	height: 100px;
+	background-color: #ddd;
+	color: #fff;
+	border-radius: 5px 5px 0px 0px;
+}
